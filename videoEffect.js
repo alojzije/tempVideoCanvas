@@ -40,7 +40,7 @@ function frameConverter(video,canvas) {
                     this.video.videoHeight,0,0,this.width, this.height);
         var data = this.ctx.getImageData(0, 0, this.width, this.height);
         // Apply image effect
-        this.effect.filter(data, {amount :6});
+        this.effect.filter(data, {amount :10});
         // Render to viewport
         this.viewport.putImageData(data, 0, 0);
     return;
